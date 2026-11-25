@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goodwood GH | Furniture Made with Purpose</title>
+<meta name="description" content="Goodwood GH is a furniture production company in Ghana creating furniture for homes, offices and businesses.">
+<style>
+:root {
+  --green: #243b30;
+  --cream: #f6f2ea;
+  --gold: #b58b55;
+  --ink: #252821;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; font-family: Arial, sans-serif;
+  color: var(--ink); line-height: 1.6;
+}
+header {
+  background: var(--green); color: white;
+  padding: 20px 7%; display: flex;
+  justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 12px;
+}
+.logo { font-size: 24px; font-weight: bold; letter-spacing: 1px; }
+nav a {
+  color: white; text-decoration: none;
+  margin-left: 18px; font-size: 14px;
+}
+.hero {
+  background: linear-gradient(90deg,rgba(20,30,23,.86),rgba(20,30,23,.2)),
+  url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1800&q=85') center/cover;
+  min-height: 490px; padding: 90px 8%; color: white;
+  display: flex; align-items: center;
+}
+.hero-content { max-width: 650px; }
+.eyebrow { color: #e4c69b; text-transform: uppercase; letter-spacing: 3px; font-size: 12px; }
+h1 { font-size: clamp(38px,6vw,66px); line-height: 1.1; margin: 15px 0; }
+h2 { font-size: clamp(27px,4vw,38px); line-height: 1.2; }
+p { color: #65665f; }
+.hero p { color: #f4f0e8; font-size: 18px; max-width: 540px; }
+.btn {
+  display: inline-block; padding: 13px 22px;
+  background: var(--gold); color: white;
+  text-decoration: none; margin-top: 15px;
+  font-weight: bold; border-radius: 3px;
+}
+section { padding: 70px 8%; }
+.intro { background: var(--cream); text-align: center; }
+.intro p { max-width: 700px; margin: auto; }
+.section-heading { max-width: 650px; margin-bottom: 30px; }
+.products {
+  display: grid; grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 22px;
+}
+.product { background: white; border: 1px solid #e8e4dc; }
+.product img { width: 100%; height: 205px; object-fit: cover; display: block; }
+.product div { padding: 18px; }
+.product h3 { margin: 0 0 8px; }
+.product p { font-size: 14px; margin-bottom: 0; }
+.about {
+  background: var(--green); color: white;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 45px; align-items: center;
+}
+.about p { color: #e0e4dc; }
+.about img { width: 100%; min-height: 280px; object-fit: cover; }
+.contact { text-align: center; background: var(--cream); }
+footer {
+  background: #18251e; color: white;
+  text-align: center; padding: 25px;
+}
+footer p { color: #d4d8d1; font-size: 13px; }
+@media(max-width:750px) {
+  header { padding: 18px 5%; }
+  nav { width: 100%; }
+  nav a { margin: 0 12px 0 0; display: inline-block; }
+  .hero { padding: 65px 6%; min-height: 430px; }
+  section { padding: 50px 6%; }
+  .products { grid-template-columns: 1fr; }
+  .about { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">GOODWOOD GH</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Furniture</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">Furniture Production · Ghana</div>
+    <h1>Thoughtfully Made Furniture for Every Space.</h1>
+    <p>Discover furniture solutions for homes, offices and businesses, with options tailored to your space, style and needs.</p>
+    <a class="btn" href="#products">Explore Our Furniture</a>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="eyebrow">Welcome to Goodwood GH</div>
+  <h2>Designed for Living. Made for You.</h2>
+  <p>We create furniture solutions for everyday living and working. From timeless home furnishings to functional office pieces and custom-made designs, we aim to help you make better use of every space.</p>
+</section>
+
+<section id="products">
+  <div class="section-heading">
+    <div class="eyebrow">What We Make</div>
+    <h2>Furniture for Every Need</h2>
+    <p>Explore our furniture categories or contact us to discuss a custom design.</p>
+  </div>
+  <div class="products">
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80" alt="Dining table and chairs">
+      <div><h3>Tables & Chairs</h3><p>Furniture for dining, gathering and everyday use.</p></div>
+    </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80" alt="Wardrobe and storage furniture">
+      <div><h3>Wardrobes & Cabinets</h3><p>Storage solutions designed to organise your space.</p></div>
+    </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Comfortable bedroom furniture">
+      <div><h3>Beds & Bedroom Furniture</h3><p>Furniture to help make your bedroom feel like home.</p></div>
+    </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80" alt="Modern office workspace">
+      <div><h3>Office Furniture</h3><p>Practical furniture for productive workspaces.</p></div>
+    </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Modern kitchen interior">
+      <div><h3>Kitchen Furniture</h3><p>Furniture solutions to make kitchens work better.</p></div>
+    </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Contemporary custom furniture interior">
+      <div><h3>Custom-Made Furniture</h3><p>Discuss your dimensions, preferred design and specific requirements with us.</p></div>
+    </article>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div>
+    <div class="eyebrow">About Our Company</div>
+    <h2>Furniture Solutions with Your Space in Mind.</h2>
+    <p>Goodwood GH is a Ghana-based furniture production company serving individual customers and businesses. Our range covers home, bedroom, kitchen and office furniture, as well as custom-made pieces.</p>
+    <p>Have a project in mind? Get in touch to discuss your requirements.</p>
+    <a class="btn" href="#contact">Talk to Our Team</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1601058268499-e52658b8bb88?auto=format&fit=crop&w=1000&q=80" alt="Furniture craftsmanship and woodwork">
+</section>
+
+<section class="contact" id="contact">
+  <div class="eyebrow">Get in Touch</div>
+  <h2>Let's Discuss Your Furniture Needs.</h2>
+  <p>Contact Goodwood GH for product enquiries, custom furniture and business projects.</p>
+  <p><strong>Location:</strong> Ghana</p>
+  <p><strong>Email:</strong> Add your business email here</p>
+  <p><strong>Phone / WhatsApp:</strong> Add your business number here</p>
+  <a class="btn" href="mailto:">Email Goodwood GH</a>
+</section>
+</main>
+
+<footer>
+  <div><strong>GOODWOOD GH</strong></div>
+  <p>Furniture Production · Ghana</p>
+  <p>© 2026 Goodwood GH. All rights reserved.</p>
+</footer>
+</body>
+</html>
